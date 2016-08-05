@@ -772,12 +772,12 @@ if (options.supervise || options.logfile || options.liskscript) {
 		//TODO: only acts after a new match, revision to speed up log message recog
 		t.on("line", function(data) {
 			var matches;
-			if (matches = data.replace(/(\n|\r)+$/, '').match(/^(\w+) (\d+-\d+-\d+) (\d+:\d+:\d+) (\w+) (.*)/)) {
+			if (matches = data.replace(/(\n|\r)+$/, '').match(/^\[(\w+)\] (\d+-\d+-\d+) (\d+:\d+:\d+) \| (\w+) - (.*)/)) {
 				if (message !== "") {
 					switch (verb) {
 						case "Fork":
 							try {
-								message = message.replace(/(\w+):/g, "\"\$1\":").replace(/'/g, '"');
+								//message = message.replace(/(\w+):/g, "\"\$1\":").replace(/'/g, '"');
 								var json = JSON.parse(message);
 								switch (json.cause) {
 									case 1:
