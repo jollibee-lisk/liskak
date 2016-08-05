@@ -1,4 +1,9 @@
 # liskak
+
+...adoptions made to new log file format in v0.3.2<br />
+...please use -J option to specify *.app.log file, default does not work anymore<br />
+...version yet untested in production<br />
+
 Lisk Army Knife - Forging failover and command line lisk
 
 # Foreword
