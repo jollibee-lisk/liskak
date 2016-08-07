@@ -3,6 +3,7 @@
 ...adoptions made to new log file format in v0.3.2<br />
 ...please use -J option to specify *.app.log file, default does not work anymore<br />
 ...version yet untested in production<br />
+...test functionality of Fork log entry with cmd [ echo '[inf] 2016-00-00 00:00:00 | Fork - {"delegate":"848b16a387bc6e20fea768d3c3c0cda643f4b113a6d2bf70a53e19120c93fa64","block":{"id":"3919780194750721665","timestamp":12345,"height":12345,"previousBlock":"239468678707550779"},"cause":3}' >> lisk_test.app.log ] from within logs/ directory, which should trigger rebuild.<br />
 
 Lisk Army Knife - Forging failover and command line lisk
 
